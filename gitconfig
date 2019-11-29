@@ -1,0 +1,28 @@
+[user]
+	name = jadger 
+	email = jadger@163.com
+[alias]
+    st = status
+    ci = commit
+    pl = pull
+    ph = push
+    df = diff
+    br = branch
+    co = checkout
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset | %C(bold)%an' --abbrev-commit --date=relative
+[push]
+[core]
+    editor = vim
+	ignorecase = false
+[color]
+    ui = True
+[gui]
+	encoding = utf-8
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
